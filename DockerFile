@@ -1,0 +1,5 @@
+FROM hub.c.163.com/library/java:8-jre
+MAINTAINER wuge 593349386@qq.com
+ADD target/*.jar first-demo.jar
+EXPOSE 9001
+ENTRYPOINT ["java", "-jar", "first-demo.jar"]
